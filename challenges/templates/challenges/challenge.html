@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>{{ month }}</title>
+</head>
+
+<body>
+<h1>{{ month|title }} challenges</h1>
+    {% if text is not None %}
+        <h3>{{ text }}</h3>
+    {% else %}
+        <h3>There is no challenges listed for this month</h3>
+    {% endif %}
+</body>
+</html>
